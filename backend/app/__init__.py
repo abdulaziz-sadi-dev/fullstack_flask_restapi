@@ -1,6 +1,7 @@
 from fastapi import FastAPI
 from contextlib import asynccontextmanager
 from app.routes.year_group import router as year_group_router
+from app.db.main import get_db
 
 
 # create lifecycle events
@@ -8,6 +9,7 @@ from app.routes.year_group import router as year_group_router
 async def lifespan(app: FastAPI):
     # startup code here
     print("Starting up...")
+    await get_db()  # test database connection
     yield
     # shutdown code here
     print("Shutting down...")
