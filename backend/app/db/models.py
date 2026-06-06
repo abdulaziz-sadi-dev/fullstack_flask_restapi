@@ -8,7 +8,7 @@ from datetime import datetime
 class YearGroup(SQLModel, table=True):
     __tablename__ = "year_groups"
     # id: Optional[int] = Field(default=None, primary_key=True)
-    uid: UUID = Field(sa_column=Column(pg.UUID(), primary_key=True, unique=True, default_factory=uuid4))
+    uid: UUID = Field(default_factory=uuid4, sa_column=Column(pg.UUID(), primary_key=True, unique=True))
     name: str = Field(index=True, nullable=False, unique=True)
     description: Optional[str] = Field(default=None, nullable=True)
     created_at: datetime = Field(default_factory=datetime.now, nullable=False)
