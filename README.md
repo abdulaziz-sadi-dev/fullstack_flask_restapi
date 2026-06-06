@@ -1,5 +1,5 @@
-# fullstack_FastAPI
+# IGCSE AI powered assessment platform
 
-## Project Description
+### Project Description
 
-## Project Tech Stack
+### Project Tech Stack
