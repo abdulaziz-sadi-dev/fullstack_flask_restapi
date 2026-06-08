@@ -1,1 +1,18 @@
 @import "tailwindcss";
+
+@theme {
+  --color-brand: #0A183B;
+  --color-brand-foreground: #fff;
+  --color-brand-light: #1a2d5c;
+  --color-brand-dark: #081228;
+  --color-accent: #36E4AA;
+  --color-accent2: #10B981;
+  --color-field: #f3f4f6;
+  --color-card: #fff;
+  --color-card-dark: #111827;
+  --color-background: #fff;
+  --color-foreground: #111827;
+  --color-muted-foreground: #6b7280;
+  --color-border: #e5e7eb;
+  --font-display: "Inter", "SF Pro Display", system-ui, sans-serif;
+}
